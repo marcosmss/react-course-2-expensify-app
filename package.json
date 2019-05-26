@@ -51,6 +51,8 @@
     "validator": "8.0.0",
     "webpack": "3.1.0",
     "webpack-dev-server": "2.5.1",
-    "node": "11.6.0"
+    "node": "12.3.1",
+    "yarn": "1.15.2",
+    "npm": "6.9.0"
   }
 }
