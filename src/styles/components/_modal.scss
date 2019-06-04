@@ -1,0 +1,23 @@
+.modal > div {
+    opacity: 0;
+}
+
+.modal {
+    background: $off-white;
+    max-width: 30rem;
+    outline: none;
+    padding: $l-size;
+    text-align: center;
+    align-items: center;
+}
+
+.box {
+    max-width: 30rem;
+    background: $off-white;
+    justify-content: center;
+    align-items: center
+}
+
+.modal__title {
+    margin: 0 0 $m-size 0;
+}
