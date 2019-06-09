@@ -23,15 +23,17 @@ class ModalPage extends React.Component {
                 <button className="button button--remove" onClick={this.openModal}>
                     Remove Expense
                 </button>
-                <Modal
-                    isOpen={this.state.modalIsOpen}
-                    onRequestClose={this.state.modalIsOpen}
-                    className="modal box"
-                >
-                    <h2 className="page-header__title modal__title">Delete Expensify ?</h2>      
-                    <button className="button" onClick={this.props.removeExpense}>Yes</button>
-                    <button className="button" onClick={this.closeModal}>Close</button>
-                </Modal>
+                <div className="modal__center">
+                    <Modal
+                        isOpen={this.state.modalIsOpen}
+                        onRequestClose={this.state.modalIsOpen}
+                        className="modal box modal__center"
+                    >
+                        <h2 className="page-header__title modal__title">Delete Expensify ?</h2>      
+                        <button className="button" onClick={this.props.removeExpense}>Yes</button>
+                        <button className="button" onClick={this.closeModal}>Close</button>
+                    </Modal>
+                </div>
             </div>
         )
     }
