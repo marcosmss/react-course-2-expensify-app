@@ -6,15 +6,11 @@ export const login = (uid) => ({
 });
 
 export const startLogin = () => {
-    return () => {
-        return firebase.auth().signInWithPopup(googleAuthProvider);
-    };
+    return firebase.auth().signInWithPopup(googleAuthProvider);
 };
 
 export const startLoginFacebook = () => {
-    return () => {
-        return firebase.auth().signInWithPopup(facebookAuthProvider);
-    };
+    return firebase.auth().signInWithPopup(facebookAuthProvider);
 };
 
 export const logout = () => ({
@@ -22,7 +18,5 @@ export const logout = () => ({
 });
 
 export const startLogout = () => {
-    return () => {
-        return firebase.auth().signOut();
-    };
+    return firebase.auth().signOut();
 };
