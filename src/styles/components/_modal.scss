@@ -1,31 +1,36 @@
 .modal > div {
-    opacity: 0;
+  opacity: 0;
 }
 
 .modal {
-    background: $off-white;
-    max-width: 30rem;
-    outline: none;
-    padding: $l-size;
-    text-align: center;
-    align-items: center;
+  background: $off-white;
+  max-width: 30rem;
+  outline: none;
+  padding: $l-size;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0px 0px 2px 0px #333;
 }
 
 .box {
-    max-width: 30rem;
-    background: $off-white;
-    justify-content: center;
-    align-items: center
+  max-width: 30rem;
+  background: $off-white;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal__title {
-    margin: 0 0 $m-size 0;
+  margin: 0 0 $m-size 0;
 }
 
 .modal__center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 200px;
-    width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  width: 40%;
+}
+
+.modal__center button:not(:last-child) {
+  margin-right: 40px;
 }
